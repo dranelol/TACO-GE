@@ -8,7 +8,7 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
-#include "GLobject.h"
+#include "GLObject.h"
 #include "SceneID.h"
 #include "FrameBuffer.h"
 #include "ObjectID.h"
@@ -21,7 +21,7 @@ public:
 
 	Scene();
 	Scene(std::string name);
-	Response AddObject(GLobject * object);
+	Response AddObject(GLObject * object);
 
 
 
@@ -29,7 +29,7 @@ private:
 
 protected:
 	SceneID * id;
-	std::unordered_map<ObjectID, GLobject*, ObjectIDHasher> * objects;
+	std::unordered_map<ObjectID, GLObject*, ObjectIDHasher> * objects;
 	std::unordered_map<FrameID, FrameBuffer*, FrameIDHasher> * renderFrames;
 
 };

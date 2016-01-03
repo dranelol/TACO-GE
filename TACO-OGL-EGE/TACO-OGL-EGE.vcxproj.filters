@@ -39,6 +39,9 @@
     <ClCompile Include="components\engine\core\core\cpp\Scene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="components\engine\objectComponents\cpp\BaseComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="components\engine\core\system\h\DirectiveParser.h">
@@ -75,6 +78,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="components\engine\core\core\h\FrameID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="components\engine\objectComponents\h\BaseComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

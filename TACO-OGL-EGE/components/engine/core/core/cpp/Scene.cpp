@@ -14,9 +14,9 @@ Scene::Scene(std::string name){
 	//same as () but with initialized name
 }
 
-Response Scene::AddObject(GLobject * object){
+Response Scene::AddObject(GLObject * object){
 	if (!this->objects){
-		this->objects = new std::unordered_map<ObjectID, GLobject*, ObjectIDHasher>();
+		this->objects = new std::unordered_map<ObjectID, GLObject*, ObjectIDHasher>();
 		return Response();
 	}
 	//change here
