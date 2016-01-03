@@ -130,6 +130,9 @@ public:
 
 	void AddComponent(BaseComponent* newComponent);
 
+protected:
+
+
 private:
 
 	/** @brief	The components of this object. This INCLUDES the Transform and Renderer */
@@ -139,7 +142,6 @@ private:
 
 	Renderer* renderer;
 
-protected:
 
 };
 
